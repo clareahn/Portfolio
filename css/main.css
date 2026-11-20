@@ -1,15 +1,11 @@
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-}
+/* Entry stylesheet */
+@import url("base.css");
 
-/* TEMPORARY: outline each section so you can see the layout */
-nav, header, section, footer {
-  outline: 2px solid hotpink;
-  padding: 40px 20px;
-}
 
-/* Give each section some height so scrolling is obvious */
-header, section {
-  min-height: 60vh;
-}
+/* temp section colours: these move into each section's own file in later steps */
+.title    { background: linear-gradient(var(--sky), var(--sky2)); min-height: 100vh; }
+.about    { background: var(--pink2); }
+.skills   { background: var(--butter); }
+.projects { background: var(--sky2); }
+.contact  { background: var(--mint); }
+footer    { background: var(--ink); color: #fff; text-align: center; padding: 26px 16px; }

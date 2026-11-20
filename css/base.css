@@ -1,0 +1,86 @@
+/* ============ Theme tokens: change colours & fonts here ============ */
+:root {
+  /* pastel palette */
+  --sky: #bfe3ff;
+  --sky2: #e3f3ff;
+  --pink: #ffd1e3;
+  --pink2: #fff0f6;
+  --coral: #ff6f91;    /* accent: buttons & highlights */
+  --butter: #ffe8a3;
+  --mint: #c9f2dc;
+  --lav: #ddd0ff;
+
+  /* text */
+  --ink: #3b2f52;      /* main text: soft purple-black */
+  --ink2: #6b5f80;     /* secondary text */
+  --white: #fff;
+
+  /* shapes */
+  --r: 28px;                                   /* corner roundness */
+  --shadow: 0 6px 0 rgba(59, 47, 82, .12);     /* chunky "sticker" shadow */
+
+  /* fonts */
+  --font-display: Fredoka, ui-rounded, system-ui, sans-serif;
+  --font-body: Nunito, ui-rounded, system-ui, sans-serif;
+}
+
+/* ============ Reset ============ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;      /* nav links glide instead of jumping */
+  scroll-padding-top: 84px;     /* leaves room for the fixed nav (Step 4) */
+}
+
+body {
+  margin: 0;
+  background: var(--pink2);
+  color: var(--ink);
+  font: 17px/1.6 var(--font-body);
+  overflow-x: clip;             /* stops anything accidentally causing sideways scroll */
+}
+
+/* ============ Typography ============ */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+h2 {
+  font-size: clamp(32px, 5vw, 46px);
+  line-height: 1.05;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+a {
+  color: inherit;
+}
+
+/* ============ Layout helpers ============ */
+.band {                         /* a full-width coloured section */
+  position: relative;
+  padding: clamp(48px, 7vw, 96px) max(5vw, 16px);
+}
+
+.wrap {                         /* centres content with a max width */
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.lead {                         /* softer intro paragraph under a heading */
+  color: var(--ink2);
+  max-width: 60ch;
+}
+
+.card {                         /* white sticker-style box */
+  background: var(--white);
+  border: 3px solid var(--ink);
+  border-radius: var(--r);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
