@@ -1,0 +1,43 @@
+/* Nav bar */
+
+/* the floating pill */
+.nav {
+  position: fixed;              /* stays put while the page scrolls */
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);  /* centres it horizontally */
+  z-index: 20;                  /* sits on top of everything else */
+
+  display: flex;                /* links in a row */
+  gap: 4px;
+  padding: 6px;
+  border-radius: 999px;         /* fully rounded ends = pill shape */
+
+  background: rgba(255, 255, 255, .85);  /* slightly see-through white */
+  box-shadow: var(--shadow);
+
+  max-width: calc(100% - 24px); /* never wider than the screen */
+  overflow-x: auto;             /* on tiny screens, links scroll sideways */
+}
+
+/* each link */
+.nav a {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font: 500 17px var(--font-display);
+  text-decoration: none;        /* removes the underline */
+}
+
+/* hover + keyboard focus */
+.nav a:hover,
+.nav a:focus-visible {
+  background: var(--lav);
+}
+
+/* for smaller phone screens */
+@media (max-width: 600px) {
+  .nav a {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+}

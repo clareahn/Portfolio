@@ -1,5 +1,6 @@
 /* Entry stylesheet */
 @import url("base.css");
+@import url('nav.css');
 
 
 /* temp section colours: these move into each section's own file in later steps */

@@ -1,4 +1,4 @@
-/* ============ Theme tokens: change colours & fonts here ============ */
+/* Theme tokens: change colours & fonts here */
 :root {
   /* pastel palette */
   --sky: #bfe3ff;
@@ -24,7 +24,7 @@
   --font-body: Nunito, ui-rounded, system-ui, sans-serif;
 }
 
-/* ============ Reset ============ */
+/* Reset */
 * {
   box-sizing: border-box;
 }
@@ -42,7 +42,7 @@ body {
   overflow-x: clip;             /* stops anything accidentally causing sideways scroll */
 }
 
-/* ============ Typography ============ */
+/* Typography */
 h1, h2, h3, h4 {
   font-family: var(--font-display);
 }
@@ -61,7 +61,7 @@ a {
   color: inherit;
 }
 
-/* ============ Layout helpers ============ */
+/* Layout helpers */
 .band {                         /* a full-width coloured section */
   position: relative;
   padding: clamp(48px, 7vw, 96px) max(5vw, 16px);
