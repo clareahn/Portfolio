@@ -3,11 +3,10 @@
 @import url('nav.css');
 @import url('buttons.css');
 @import url('title.css');
-
+@import url('skills.css');
 
 /* temp section colours: these move into each section's own file in later steps */
 .about    { background: var(--pink2); }
-.skills   { background: var(--butter); }
 .projects { background: var(--sky2); }
 .contact  { background: var(--mint); }
 footer    { background: var(--ink); color: #fff; text-align: center; padding: 26px 16px; }

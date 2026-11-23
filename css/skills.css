@@ -1,0 +1,52 @@
+/* Skills collection */
+
+.skills {
+  background: var(--butter);
+}
+
+/* space between the three groups */
+.skill-groups {
+  display: grid;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+/* group headings: "Languages", "Tools"… */
+.skill-group h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink2);
+}
+
+/* ----- the list → a row of stickers ----- */
+.stickers {
+  list-style: none;           /* removes the bullet points */
+  margin: 0;
+  padding: 0;                 /* removes the default left indent */
+
+  display: flex;
+  flex-wrap: wrap;            /* stickers wrap onto new lines */
+  gap: 14px;
+}
+
+/* each sticker */
+.stickers li {
+  padding: 10px 20px;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  font: 600 18px var(--font-display);
+}
+
+/* cycle through the pastel colours */
+.stickers li:nth-child(5n + 1) { background: var(--pink); }
+.stickers li:nth-child(5n + 2) { background: var(--blue); }
+.stickers li:nth-child(5n + 3) { background: var(--cream); }
+.stickers li:nth-child(5n + 4) { background: var(--mint); }
+.stickers li:nth-child(5n)     { background: var(--lav); }
+
+/* slightly different tilts so they look hand-placed */
+.stickers li:nth-child(3n + 1) { transform: rotate(-4deg); }
+.stickers li:nth-child(3n + 2) { transform: rotate(3deg); }
+.stickers li:nth-child(3n)     { transform: rotate(-2deg); }
