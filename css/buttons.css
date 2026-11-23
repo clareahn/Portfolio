@@ -1,0 +1,51 @@
+/* Buttons (shared across the whole site) */
+
+/* a row of buttons */
+.btns {
+  display: flex;
+  flex-wrap: wrap;            /* buttons drop to a new line if there's no room */
+  justify-content: center;    /* centred horizontally */
+  gap: 12px;
+}
+
+/* the basic button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;           /* big enough to tap comfortably on a phone */
+  padding: 0 24px;
+
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 5px 0 var(--ink);   /* solid shadow underneath = "3D sticker" look */
+
+  font: 600 17px var(--font-display);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* lifts slightly on hover */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--ink);
+}
+
+/* pushes down when clicked */
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+/* keyboard focus ring */
+.btn:focus-visible {
+  outline: 3px dashed var(--coral);
+  outline-offset: 4px;
+}
+
+/* the coloured "main" button */
+.btn.main {
+  background: var(--coral);
+  color: var(--white);
+}

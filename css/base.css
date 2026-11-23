@@ -1,11 +1,12 @@
 /* Theme tokens: change colours & fonts here */
 :root {
   /* pastel palette */
-  --sky: #bfe3ff;
-  --sky2: #e3f3ff;
+  --sky: #4cacf5;
+  --blue: #bfe3ff;
+  --sky2: #e6f4ff;
   --pink: #ffd1e3;
   --pink2: #fff0f6;
-  --coral: #ff6f91;    /* accent: buttons & highlights */
+  --coral: #f8809a;    /* accent: buttons & highlights */
   --butter: #ffe8a3;
   --mint: #c9f2dc;
   --lav: #ddd0ff;
