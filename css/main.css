@@ -5,6 +5,7 @@
 @import url('title.css');
 @import url('skills.css');
 @import url('projects.css');
+@import url('project-page.css');
 
 /* temp section colours: these move into each section's own file in later steps */
 .about    { background: var(--pink2); }
