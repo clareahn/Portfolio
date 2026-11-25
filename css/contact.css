@@ -1,0 +1,45 @@
+/* Contact */
+
+.contact {
+  background: var(--mint);
+  text-align: center;
+}
+
+/* .lead has a max-width, so centre the box itself too */
+.contact .lead {
+  margin-inline: auto;
+}
+
+/* the letter card */
+.letter {
+  max-width: 620px;
+  margin: 28px auto 0;           /* auto left/right = centred */
+  padding: 36px 28px;
+  box-shadow: 0 8px 0 var(--ink);  /* chunkier shadow than a normal card */
+}
+
+.letter-label {
+  margin: 0 0 4px;
+  color: var(--ink2);
+  font-size: 15px;
+}
+
+/* the big email address */
+.email {
+  display: inline-block;
+  margin-bottom: 24px;
+  font: 600 clamp(20px, 4vw, 30px) var(--font-display);
+  text-decoration: none;
+  overflow-wrap: anywhere;       /* long email can break onto two lines on tiny screens */
+}
+
+.email:hover {
+  color: var(--coral);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.email:focus-visible {
+  outline: 3px dashed var(--coral);
+  outline-offset: 4px;
+}
