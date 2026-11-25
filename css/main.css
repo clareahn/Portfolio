@@ -6,8 +6,8 @@
 @import url('skills.css');
 @import url('projects.css');
 @import url('project-page.css');
+@import url('about.css');
 
 /* temp section colours: these move into each section's own file in later steps */
-.about    { background: var(--pink2); }
 .contact  { background: var(--mint); }
 footer    { background: var(--ink); color: #fff; text-align: center; padding: 26px 16px; }

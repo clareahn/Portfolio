@@ -1,0 +1,66 @@
+/* About me */
+
+.about {
+  background: var(--pink2);
+}
+
+/* two columns: bio | facts */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+  margin-top: 28px;
+}
+
+.about-bio p:last-child {
+  margin-bottom: 0;              /* no extra space at the bottom of the card */
+}
+
+/* fun facts: a 2 × 2 grid of stickers */
+.facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));   /* 2 equal columns */
+  gap: 16px;
+}
+
+.fact {
+  padding: 18px;
+  border: 3px solid var(--ink);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.fact-label {
+  display: block;                /* puts the label on its own line */
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.fact-value {
+  display: block;
+  font: 600 22px/1.2 var(--font-display);
+}
+
+/* sticker colours */
+.fact:nth-child(1) { background: var(--pink); }
+.fact:nth-child(2) { background: var(--sky); }
+.fact:nth-child(3) { background: var(--butter); }
+.fact:nth-child(4) { background: var(--mint); }
+
+/* hand-placed tilts */
+.fact:nth-child(1) { transform: rotate(-2deg); }
+.fact:nth-child(2) { transform: rotate(1.5deg); }
+.fact:nth-child(3) { transform: rotate(1deg); }
+.fact:nth-child(4) { transform: rotate(-1.5deg); }
+
+/* phones: stack bio above facts */
+@media (max-width: 760px) {
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
